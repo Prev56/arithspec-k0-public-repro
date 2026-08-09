@@ -1,0 +1,20 @@
+{
+  "variant": "K0-Lite",
+  "spec_version": "2.5",
+  "n_iterations": 200000,
+  "lang": "Rust",
+  "platform": "aarch64",
+  "platform_system": "Linux (Debian Trixie)",
+  "platform_detail": "aarch64-unknown-linux-gnu",
+  "compiler_info": "rustc 1.95.0 --release",
+  "hw": "Raspberry Pi 5 (Cortex-A76)",
+  "hash": "e1606bef1b34afe155adeace4aae7fd2aa22f0236ada22a61dd71631baae050a",
+  "match_reference": true,
+  "run1_hash": "e1606bef1b34afe155adeace4aae7fd2aa22f0236ada22a61dd71631baae050a",
+  "run2_hash": "e1606bef1b34afe155adeace4aae7fd2aa22f0236ada22a61dd71631baae050a",
+  "run1_eq_run2": true,
+  "match_x86_reference": true,
+  "note": "K0-Lite aarch64 certified. Hash matches x86-64 reference exactly.",
+  "timestamp": "2026-06-08T00:00:00Z",
+  "phase": "Phase 2c (K0-Lite cross-platform)"
+}

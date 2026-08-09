@@ -1,0 +1,26 @@
+{
+  "platform": "AMD64",
+  "python_version": "3.11.0rc2",
+  "mode": "quick",
+  "n_neurons": 64,
+  "n_ticks": 200,
+  "elapsed_s": 0.037,
+  "hash_float_standard": "6c73d09ee46da0a44f1f6acb5709da76969c3e6b807caa81ed04424343642abf",
+  "hash_float_reversed": "e547cf4bc80d5dd44e645e774b270ef298c8af0ec7968c96baca82ce28723bd8",
+  "hash_k0_lite": "f122882b57d670b73fdf18570fe609a268a8d384f259833c1c41ac1609fd0091",
+  "float_ab_identical": false,
+  "float_ab_diverge_tick": 11,
+  "float_ab_n_diff_spikes": 34,
+  "float_ab_n_diff_vm": 12800,
+  "k0_hash": "f122882b57d670b73fdf18570fe609a268a8d384f259833c1c41ac1609fd0091",
+  "summary": {
+    "float_order_diverges": true,
+    "k0_invariant": true,
+    "diverge_tick": 11
+  },
+  "k0_s2": {
+    "k0_run1_hash": "f122882b57d670b73fdf18570fe609a268a8d384f259833c1c41ac1609fd0091",
+    "k0_run2_hash": "f122882b57d670b73fdf18570fe609a268a8d384f259833c1c41ac1609fd0091",
+    "k0_s2_pass": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "mission": "Mission 3 — TLA+ Formal Verification",
+  "tool": "TLC2 Version 2.19 (rev: 5a47802) / tla2tools.jar",
+  "java": "OpenJDK 21.0.5 Temurin (java)",
+  "spec_file": "formal/K0Composition.tla",
+  "cfg_file": "formal/K0Composition.cfg",
+  "module": "K0Composition",
+  "domain": "{-32767, 0, 32767}  (* Q16.16 representative: -0.5, 0, +0.5 *)",
+  "status_domain": "0..2",
+  "states_generated": 39366,
+  "distinct_states": 19683,
+  "search_depth": 1,
+  "runtime_ms": 1003,
+  "result": "PASS — Model checking completed. No error has been found.",
+  "invariants": {
+    "LeftIdentityBias":    "VERIFIED",
+    "RightIdentityBias":   "VERIFIED",
+    "LeftIdentityWeight":  "VERIFIED",
+    "RightIdentityWeight": "VERIFIED",
+    "StickyStatus":        "VERIFIED"
+  },
+  "non_invariants": {
+    "AssocBias": "NOT_CLAIMED — saturating add is not associative (expected; documented in spec)"
+  },
+  "overflow_guard": "Domain max 32767: worst product = 65536 * 32767 = 2,147,418,112 < INT32_MAX",
+  "timestamp": "2026-06-08T00:00:00Z",
+  "phase": "Phase 2c (TLA+ formal verification)"
+}

@@ -1,0 +1,17 @@
+{
+  "test": "k0_ros2_determinism_standalone",
+  "mission": "Mission 2 — ROS 2 K0-Lite node determinism",
+  "source_node": "ros2/k0_snn_controller/src/k0_snn_node.cpp (mode=determinism_test)",
+  "standalone_proxy": "ros2/k0_ros_determinism_standalone.cpp",
+  "rationale": "Reuses the node's k0_determinism_run() verbatim; rclcpp not required to verify the arithmetic determinism property. ROS 2 Jazzy build certified separately on Pi 5 (Phase 3).",
+  "compiler": "g++ -O2 -std=c++17 (MinGW64 GCC 15.2.0, x86-64 Windows)",
+  "N": 1000,
+  "variant": "K0-Lite (INT32 Q16.16)",
+  "seed": "0x123456789abce900",
+  "run1": "5ce3c251361ec59e982c3ca6f4549343f8783aa1b39428a09b8510f35350a3cf",
+  "run2": "5ce3c251361ec59e982c3ca6f4549343f8783aa1b39428a09b8510f35350a3cf",
+  "double_run_equal": true,
+  "inter_process_stable": true,
+  "date": "2026-06-08",
+  "note": "N=1000 ROS-integration subset hash; distinct from the K0-Lite N=200000 conformance hash e1606bef..."
+}

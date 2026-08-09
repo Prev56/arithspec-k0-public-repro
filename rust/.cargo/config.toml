@@ -1,0 +1,2 @@
+# Zero external dependencies — vendor config disabled
+# (sha2/hex replaced by pure-Rust std implementation in lib.rs)

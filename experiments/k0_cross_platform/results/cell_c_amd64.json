@@ -1,0 +1,14 @@
+{
+  "variant": "K0-Full",
+  "spec_version": "2.5",
+  "n_iterations": 200000,
+  "lang": "C",
+  "platform": "AMD64",
+  "platform_system": "Windows",
+  "python_version": null,
+  "compiler_info": "external (see compilation log)",
+  "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+  "match_reference": true,
+  "elapsed_s": 0.0,
+  "timestamp": "2026-06-07T10:25:52Z"
+}

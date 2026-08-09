@@ -1,0 +1,13 @@
+# Rust aarch64 K0
+HASH=AX_K0_TEST_SHA256=45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d
+REF=45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d
+MATCH=True
+
+Compiling k0 v0.1.0 (/home/<PI_USER>/k0_phase2/rust)
+    Finished `release` profile [optimized] target(s) in 0.30s
+     Running `target/release/k0_bench`
+AX K0 Cost Benchmark (Rust --release) -- 1000000 ops x 50 reps
+
+  float64 mul                           :  4.79 +-0.02 ns/op  [baseline]
+  K0 mul_simple (no RNE)                :  8.78 +-0.03 ns/op  [x1.83 vs f64]
+  K0 mul_normative (GRS+RNE)            : 13.78 +-0.01 ns/op  [x2.88 vs f64]

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this public K0/ArithSpec reproduction package, please cite the software package and the associated Zenodo records."
+title: "ArithSpec K0 Public Reproduction Package"
+authors:
+  - family-names: Denoual
+    given-names: Jean-René
+version: "1.0.0"
+date-released: "2026-08-09"
+license: AGPL-3.0-only
+repository-code: "https://github.com/Prev56/arithspec-k0-public-repro"
+url: "https://github.com/Prev56/arithspec-k0-public-repro"
+type: software
+abstract: >
+  Public reproduction package for the ArithSpec/K0 deterministic integer
+  arithmetic substrate for spiking neural networks. The package contains the
+  public conformance source code, normative specification, reference hashes,
+  and reproduction artifacts required to verify bit-exact K0 behavior. It does
+  not contain private project logic, internal governance files, private
+  parameters, orchestration scripts, credentials, tokens, or local machine paths.
+keywords:
+  - spiking neural networks
+  - determinism
+  - fixed-point arithmetic
+  - reproducibility
+  - neuromorphic
+  - embedded systems
+preferred-citation:
+  type: article
+  title: "A Normative Arithmetic Substrate for Bit-Exact Spiking Neural Networks"
+  authors:
+    - family-names: Denoual
+      given-names: Jean-René
+  year: 2026
+  publisher: Eventcompute
+  doi: "10.5281/zenodo.20723009"
+  url: "https://doi.org/10.5281/zenodo.20723009"

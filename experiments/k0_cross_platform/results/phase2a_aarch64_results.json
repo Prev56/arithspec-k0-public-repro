@@ -1,0 +1,19 @@
+{
+  "arch_info": "aarch64\nPython 3.13.5\ngcc (Debian 14.2.0-19) 14.2.0",
+  "endianness": "little",
+  "hash_c_O0": "AX_K0_TEST_SHA256=45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+  "hash_c_O2": "AX_K0_TEST_SHA256=45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+  "hash_python": "K0-Full Python conformance test \u2014 N=200 000\nAX_K0_TEST_SHA256=45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d\nDur\u00e9e: 1.36s\n\nNOTE: Ce hash doit \u00eatre identique \u00e0 la sortie de ./k0_test (C)\n      Une fois le hash de r\u00e9f\u00e9rence C \u00e9tabli, mettre \u00e0 jour CONFORMANCE.md \u00a77",
+  "bench_c": "ax_bench.c: In function \u2018now_sec\u2019:\nax_bench.c:53:5: error: implicit declaration of function \u2018clock_gettime\u2019 [-Wimplicit-function-declaration]\n   53 |     clock_gettime(CLOCK_MONOTONIC, &ts);\n      |     ^~~~~~~~~~~~~\nax_bench.c:53:19: error: \u2018CLOCK_MONOTONIC\u2019 undeclared (first use in this function)\n   53 |     clock_gettime(CLOCK_MONOTONIC, &ts);\n      |                   ^~~~~~~~~~~~~~~\nax_bench.c:53:19: note: each undeclared identifier is reported only once for each function it appears in",
+  "divergence_float": "============================================================\nBASELINE DIVERGENCE \u2014 Phase 1\nPlatform : aarch64 / Python 3.13.5\nMode : quick \u2014 N=200 ticks\n============================================================\n\n[1] Simulation LIF (float std / float reversed / K0-Lite) \u2026\n\n  hash_float_standard : 6c73d09ee46da0a44f1f6acb5709da76...\n  hash_float_reversed : e547cf4bc80d5dd44e645e774b270ef2...\n  hash_k0_lite        : f122882b57d670b73fdf18570fe609a2...\n\n  Float A==B (m\u00eame ordre) : False\n  Float diverge tick      : 11\n  Float diff spikes (A-B) : 34\n  Float diff vm (A-B)     : 12800\n\n[2] K0-Lite double-run (S2 baseline) \u2026\n  K0 run1 : f122882b57d670b73fdf18570fe609a2...\n  K0 run2 : f122882b57d670b73fdf18570fe609a2...\n  K0 S2   : PASS \u2705\n\n[INTERPR\u00c9TATION]\n  \u2605 Float ordre-alt DIVERGE du float standard (simulation intra-platform)\n    \u2192 Sur x86 vs ARM, la m\u00eame divergence appara\u00eet naturellement via SIMD.\n  \u2705 K0-Lite invariant : m\u00eame hash sur 2 runs\n\n  CONS\u00c9QUENCE POUR LE PAPIER :\n    Figure 1 = hash_float_standard(x86) \u2260 hash_float_standard(aarch64)\n    Figure 2 = hash_k0_lite(x86) == hash_k0_lite(aarch64)\n    \u2192 Mesurer sur Pi physique avec: python baseline_divergence.py --mode full\n    \u2192 Comparer avec: python baseline_divergence.py --mode compare \\\n        --file1 results/x86_results.json --file2 results/arm_results.json\n\nR\u00e9sultats \u2192 /home/<PI_USER>/k0_phase2/experiments/baseline_divergence/results/results_aarch64_quick.json\n\n  Pour comparer cross-platform, copier ce fichier sur Pi et lancer :\n  python baseline_divergence.py --mode full\n  puis : python baseline_divergence.py --mode compare \\\n           --file1 results/results_aarch64_quick.json \\\n           --file2 results/results_aarch64_full.json",
+  "meta": {
+    "date": "2026-06-07T18:29:36.691091",
+    "host": "<PI_HOST_REDACTED>",
+    "arch_target": "aarch64",
+    "ref_hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+    "pass_c_O0": true,
+    "pass_c_O2": true,
+    "pass_O0_eq_O2": true,
+    "pass_python": true
+  }
+}

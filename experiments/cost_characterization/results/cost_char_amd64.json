@@ -1,0 +1,67 @@
+{
+  "platform": "AMD64",
+  "system": "Windows",
+  "python_version": "3.11.0rc2",
+  "n_ops": 10000,
+  "n_reps": 5,
+  "mul_comparison": {
+    "k0_mul_normative": {
+      "mean_s": 0.007157,
+      "std_s": 0.001484,
+      "ops_per_sec": 1397194.0,
+      "ns_per_op": 715.72,
+      "cv_pct": 20.73,
+      "n_ops": 10000,
+      "n_reps": 5
+    },
+    "k0_mul_simple": {
+      "mean_s": 0.002505,
+      "std_s": 0.000579,
+      "ops_per_sec": 3992112.0,
+      "ns_per_op": 250.494,
+      "cv_pct": 23.1,
+      "n_ops": 10000,
+      "n_reps": 5
+    },
+    "float64_mul": {
+      "mean_s": 0.001395,
+      "std_s": 0.000265,
+      "ops_per_sec": 7167945.0,
+      "ns_per_op": 139.51,
+      "cv_pct": 19.01,
+      "n_ops": 10000,
+      "n_reps": 5
+    },
+    "float32_mul": {
+      "mean_s": 0.003099,
+      "std_s": 0.000399,
+      "ops_per_sec": 3227222.0,
+      "ns_per_op": 309.864,
+      "cv_pct": 12.88,
+      "n_ops": 10000,
+      "n_reps": 5
+    },
+    "overhead_k0_vs_f64": 5.13,
+    "overhead_k0_vs_f32": 2.31
+  },
+  "frugality": {
+    "n_neurons": 1000,
+    "n_ticks": 100,
+    "dense_prob": 0.05,
+    "sparse_prob": 0.005,
+    "avg_active_dense": 50.0,
+    "avg_active_sparse": 5.3,
+    "tick_polling_ms": 11.891,
+    "event_driven_dense_ms": 0.745,
+    "event_driven_sparse_ms": 0.062,
+    "frugality_dense": 16.0,
+    "frugality_sparse": 191.2
+  },
+  "memory": {
+    "k0_full_bytes_per_neuron": 12,
+    "k0_lite_bytes_per_neuron": 6,
+    "float64_bytes_per_neuron": 12,
+    "float32_bytes_per_neuron": 8,
+    "notes": "Mesures struct-pack. Synapse : K0-Full=12B, Float64=12B. \u00c0 comparer sur 100k neurones."
+  }
+}

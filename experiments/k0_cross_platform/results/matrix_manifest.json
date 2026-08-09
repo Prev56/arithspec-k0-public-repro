@@ -1,0 +1,74 @@
+{
+  "variant": "K0-Full",
+  "spec_version": "2.5",
+  "n_iterations": 200000,
+  "reference_hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+  "all_match_reference": true,
+  "n_cells": 7,
+  "cells": [
+    {
+      "lang": "C",
+      "platform": "AMD64",
+      "system": "Windows",
+      "compiler": "GCC 15.2.0 -O2 (MinGW64)",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 1",
+      "match_reference": true
+    },
+    {
+      "lang": "Python",
+      "platform": "AMD64",
+      "system": "Windows",
+      "compiler": "Python 3.11.0rc2",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 1",
+      "match_reference": true
+    },
+    {
+      "lang": "C",
+      "platform": "aarch64",
+      "system": "Linux Pi5",
+      "compiler": "GCC 14.2.0 -O0 (Debian)",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 2a",
+      "match_reference": true
+    },
+    {
+      "lang": "C",
+      "platform": "aarch64",
+      "system": "Linux Pi5",
+      "compiler": "GCC 14.2.0 -O2 (Debian)",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 2a",
+      "match_reference": true
+    },
+    {
+      "lang": "Python",
+      "platform": "aarch64",
+      "system": "Linux Pi5",
+      "compiler": "Python 3.13.5",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 2a",
+      "match_reference": true
+    },
+    {
+      "lang": "Rust",
+      "platform": "AMD64",
+      "system": "Windows",
+      "compiler": "rustc 1.95.0 --release x86_64-gnu",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 2b",
+      "match_reference": true
+    },
+    {
+      "lang": "Rust",
+      "platform": "aarch64",
+      "system": "Linux Pi5",
+      "compiler": "rustc 1.95.0 --release aarch64-gnu",
+      "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+      "phase": "Phase 2b",
+      "match_reference": true
+    }
+  ],
+  "manifest_sha256": "1b2035a9b7d6ebf49da88183fdbc24b536428b8cf0a784ec382fae6b9269615f"
+}

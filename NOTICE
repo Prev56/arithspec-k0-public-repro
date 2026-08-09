@@ -1,0 +1,11 @@
+ArithSpec K0 Public Reproduction Package
+
+Copyright (c) 2026 Jean-Rene Denoual.
+
+License scope:
+
+- Source code in csrc/, python/, rust/, ros2/, and reproduction scripts is licensed under AGPL-3.0-only in LICENSE.
+- Normative specifications, papers, figures, reports, experiment descriptions, and result files are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), unless a file states otherwise.
+- This repository is the public reproduction package. The private/internal repository Prev56/arithspec-ax-k0 is not the public reproduction source and is not required for public reproduction.
+
+Public citation guidance is in CITATION.cff and PUBLIC_SCOPE_AND_CITATION.md.

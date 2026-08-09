@@ -1,0 +1,50 @@
+[package]
+name = "k0"
+version = "0.1.0"
+edition = "2021"
+description = "K0 normative arithmetic for SNN — Rust K0-Full + K0-Lite implementation"
+license = "AGPL-3.0-only"
+
+[lib]
+name = "k0"
+path = "src/lib.rs"
+
+[[bin]]
+name = "k0_test"
+path = "src/k0_test.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "k0_bench"
+path = "src/k0_bench.rs"
+required-features = ["std"]
+
+[[bin]]
+name = "k0_lite_test"
+path = "src/k0_lite_test.rs"
+required-features = ["std"]
+
+[features]
+default = ["std"]
+std = []
+
+[profile.release]
+opt-level = 3
+
+# Embedded profile — minimal size for RP2040 (thumbv6m-none-eabi)
+[profile.release-embedded]
+inherits = "release"
+opt-level = "z"
+lto = true
+panic = "abort"
+codegen-units = 1
+
+[dependencies]
+# ZERO external dependencies — SHA-256 and all arithmetic in pure Rust std
+
+
+[[bin]]
+name = "k0_debug_test"
+path = "src/k0_debug_test.rs"
+required-features = ["std"]
+

@@ -1,0 +1,27 @@
+{
+  "variant": "K0-Full",
+  "spec_version": "2.5",
+  "n_iterations": 200000,
+  "lang": "Rust",
+  "platform": "AMD64",
+  "platform_system": "Windows",
+  "platform_detail": "x86_64-pc-windows-gnu",
+  "compiler_info": "rustc 1.95.0 (59807616e 2026-04-14) --release",
+  "sha256_impl": "pure-Rust std (zero external dependencies)",
+  "hash": "45ff9803bb5254fb04af2ec70c865ec981f3f6d221894c3acb769bc2847f000d",
+  "match_reference": true,
+  "bench": {
+    "float64_ns": 3.87,
+    "float64_sd": 0.28,
+    "mul_simple_ns": 2.22,
+    "mul_simple_sd": 0.22,
+    "mul_simple_ratio": 0.57,
+    "mul_normative_ns": 9.43,
+    "mul_normative_sd": 0.38,
+    "mul_normative_ratio": 2.44,
+    "n_ops": 1000000,
+    "n_reps": 50
+  },
+  "timestamp": "2026-06-08T00:00:00Z",
+  "phase": "Phase 2b (Rust)"
+}

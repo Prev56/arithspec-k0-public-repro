@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="htt." schematypens="htt."?>
+<package format="3">
+  <name>k0_snn_controller</name>
+  <version>0.1.0</version>
+  <description>
+    ROS 2 node implementing K0 normative arithmetic (K0-Lite INT32 Q16.16).
+    Publishes deterministic SNN step outputs; verifies cross-run hash identity.
+    Reference hash: e1606bef1b34afe155adeace4aae7fd2aa22f0236ada22a61dd71631baae050a
+  </description>
+
+  <maintainer email="ax@example.com">AX-OP</maintainer>
+  <license>AGPL-3.0-only</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

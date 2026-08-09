@@ -1,0 +1,11 @@
+AX K0 Cost Benchmark — 1000000 ops × 50 reps
+
+  float64 mul               :    4.89 ±  0.01 ns/op  [baseline]
+  float32 mul               :    4.93 ±  0.02 ns/op  [×1.01 vs f64]
+  K0 mul_simple (no RNE)    :    6.29 ±  0.01 ns/op  [×1.29 vs f64]
+  K0 mul_normative (GRS+RNE) :   11.01 ±  0.11 ns/op  [×2.25 vs f64, +74.9% vs simple]
+
+  Anti-optimization sinks: 9223372036854775807 -3465265881926168038 -3603046918062259200.000000 -3603047102541725696.000000
+
+  SURCOÛT NORMATIF C (GRS+RNE vs simple) : +74.9%
+  SURCOÛT NORMATIF C (GRS+RNE vs float64) : ×2.25
